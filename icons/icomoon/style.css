@@ -1,0 +1,155 @@
+
+@font-face {
+  font-family: Montbold;
+  src: url("../Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: MontLight;
+  src: url("../Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: MontReg;
+  src: url('../Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montsbold;
+  src: url('../Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?afsfk1');
+  src:  url('fonts/icomoon.eot?afsfk1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?afsfk1') format('truetype'),
+    url('fonts/icomoon.woff?afsfk1') format('woff'),
+    url('fonts/icomoon.svg?afsfk1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.icon-quotes-left:before {
+  content: "\e977";
+}
+.icon-bookmark:before {
+  content: "\e9d2";
+}
+.icon-arrow-down2:before {
+  content: "\ea3e";
+}
+
+
+*{
+  padding: 0;
+}
+
+html{
+  font-size: 10px;
+}
+
+
+ul li {
+  list-style-type: none;
+  padding: 0;
+}
+ul li:last-child{
+  border-bottom: none;
+}
+
+.comment::before{
+font-family: 'icomoon';
+content: "\e9d2";
+font-size: 2em;
+margin-bottom: 1px;
+padding-top: 1em;
+}
+
+.mark1::before{
+color: green;
+}
+
+.mark2::before{
+color: goldenrod;
+}
+
+.mark3::before{
+color: dodgerblue;
+}
+
+.comment{
+  padding: 0.5em;
+  border-bottom: 1px solid rgb(245, 236, 236);
+  display: flex;
+}
+.content{
+margin-left: 10px;
+}
+
+.username{
+  margin-bottom: 5px;
+  font-size: 1.8em;
+  font-family: 'Montbold';
+}
+
+.comment-quotes::before{
+content: '\e977';
+font-family: 'icomoon';
+margin-right: 0.8em;
+color: green;
+}
+
+.comment-quotes{
+display: flex;
+color: rgb(153, 148, 148);
+}
+
+.date-time{
+  color:rgb(153, 148, 148);
+  font-size: 1.4em;
+  font-family: 'MontLight';
+}
+
+.comment-quotes{
+font-size: 1.8em;
+font-family: 'Montsbold';
+}
+.comment-box{
+display: flex; 
+justify-content:space-between;
+}
+.comment-button{
+margin-right: 20px; 
+padding-top: 20px;
+font-size: 1.4em;
+}
+.comment-button a{
+text-decoration: none;
+color: green;
+font-family: 'MontReg';
+}
+.comment-button a::after{
+  content: '\ea3e';
+  font-family: 'icomoon';
+  margin-left: 1em;
+}
